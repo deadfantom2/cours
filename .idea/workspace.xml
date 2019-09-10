@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="488e81d1-83db-4519-96ca-08458350e62b" name="Default Changelist" comment="" />
+    <list default="true" id="488e81d1-83db-4519-96ca-08458350e62b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/cssxfire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_quote/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/project_quote/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_quote/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project_quote/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_quote/src/components/Header.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_quote/src/components/NewQuote.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_quote/src/components/Quote.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_quote/src/components/QuoteGrid.vue" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,29 +23,34 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/project_name/package.json" />
   </component>
   <component name="ProjectId" id="1QHaV6iiJqVwDTJGBO1x5uO7b67" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/step7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/project_quote/src/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project_quote/src/components" />
+      <recent name="$PROJECT_DIR$/step7" />
+      <recent name="$PROJECT_DIR$/step5" />
+      <recent name="$PROJECT_DIR$/step3" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/project_quote" />
       <recent name="$PROJECT_DIR$/project_quote/src" />
       <recent name="$PROJECT_DIR$/project_quote/src/components" />
       <recent name="$PROJECT_DIR$/project_name/src/components/Server" />
       <recent name="$PROJECT_DIR$/project_name/src/components/Shared" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/step7" />
-      <recent name="$PROJECT_DIR$/step5" />
-      <recent name="$PROJECT_DIR$/step3" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -80,10 +95,22 @@
       <workItem from="1567691639631" duration="5158000" />
       <workItem from="1567754864517" duration="8403000" />
       <workItem from="1567769921991" duration="11438000" />
+      <workItem from="1568117792468" duration="4734000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
