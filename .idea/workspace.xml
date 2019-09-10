@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="488e81d1-83db-4519-96ca-08458350e62b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_quote/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project_quote/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_quote/src/components/NewQuote.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project_quote/src/components/NewQuote.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_quote/src/components/QuoteGrid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project_quote/src/components/QuoteGrid.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +87,7 @@
       <workItem from="1567691639631" duration="5158000" />
       <workItem from="1567754864517" duration="8403000" />
       <workItem from="1567769921991" duration="11438000" />
-      <workItem from="1568117792468" duration="7007000" />
+      <workItem from="1568117792468" duration="7085000" />
     </task>
     <servers />
   </component>
