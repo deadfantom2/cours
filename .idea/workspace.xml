@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="488e81d1-83db-4519-96ca-08458350e62b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/project_name/package.json" />
+  </component>
+  <component name="ProjectId" id="1QHaV6iiJqVwDTJGBO1x5uO7b67" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/step7" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project_quote" />
+      <recent name="$PROJECT_DIR$/project_quote/src" />
+      <recent name="$PROJECT_DIR$/project_quote/src/components" />
+      <recent name="$PROJECT_DIR$/project_name/src/components/Server" />
+      <recent name="$PROJECT_DIR$/project_name/src/components/Shared" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/step7" />
+      <recent name="$PROJECT_DIR$/step5" />
+      <recent name="$PROJECT_DIR$/step3" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue/step5/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="488e81d1-83db-4519-96ca-08458350e62b" name="Default Changelist" comment="" />
+      <created>1567429995395</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567429995395</updated>
+      <workItem from="1567429996426" duration="5934000" />
+      <workItem from="1567494837115" duration="19962000" />
+      <workItem from="1567526369612" duration="63000" />
+      <workItem from="1567591304147" duration="396000" />
+      <workItem from="1567597240685" duration="1963000" />
+      <workItem from="1567678676959" duration="487000" />
+      <workItem from="1567684245882" duration="2902000" />
+      <workItem from="1567691639631" duration="5158000" />
+      <workItem from="1567754864517" duration="8403000" />
+      <workItem from="1567769921991" duration="11438000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

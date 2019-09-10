@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <input type="text" v-on:input="changeTitle">   <!-- v-on lier la function -->
+    <p v-once>{{title}} {{a}}</p>   <!-- v-once empeche de reecrire le title -->
+    <p>{{ sayHello()}}</p>
+    <p>{{ say()}}</p>
+    <p>{{ sayOne()}}</p>
+    <a v-bind:href="link">Google</a>   <!-- v-bind recupe le contenu de la variable link qui est dans el: -->
+    <hr>
+    <p v-html="finishedLink"></p>  <!-- v-html on colle le code de variable finishedLink dans la balise <p> -> <a>  -->
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            title: 'Hello',
+            a: 'World',
+            sayMoto: 'Say Hello Moto',
+            link: 'http://google.com',
+            finishedLink: '<a href="http://google.com">Google 2eme</a>'
+        },
+        methods: {
+            changeTitle(event){
+                this.title = event.target.value;
+            },
+            sayHello: function () {
+                return 'Hello lexx';
+            },
+            say: function () {
+                return this.sayMoto;
+            },
+            sayOne: function () {
+                this.title = 'Lexx 6680';
+                return this.title;
+            }
+        }
+    })
+</script>
+
+
+</body>
+</html>

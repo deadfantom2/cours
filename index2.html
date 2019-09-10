@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <input type="text" v-model="name">
+    <p>{{ name }}</p>
+
+    <button v-on:click="counter--">-1</button>
+    <button v-on:click="counter++">+1</button>
+    <button v-on:click="secondCounter++">+1</button>
+    <p>Counter: {{ counter }} or {{ secondCounter }}</p>
+    <p>Result: {{ results() }} or {{ output }}</p>   <!-- output on utilise comme une proprieté et pas comme une function -->
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            name: 'Val',
+            counter: 0,
+            result: '',
+            secondCounter: 0
+        },
+        computed: {
+            output: function () {
+                console.log('computed')
+                return this.counter > 5 ? 'Greater 5' : 'Smaller 5';
+            }
+        },
+        watch: {
+          counter: function (value) {
+              var vm = this;  // obligatoire pour cela function danc callback
+              setTimeout(function () {
+                  vm.counter = 0;
+              }, 6000)
+          }
+        },
+        methods: {
+            results: function () {
+                console.log('methods')
+                return this.counter > 5 ? 'Greater 5' : 'Smaller 5'
+            }
+        }
+    })
+</script>
+
+
+</body>
+</html>

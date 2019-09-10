@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <ul>
+        <li v-for="(ingrediant, i) in ingredients" :key="ingrediant">{{ ingrediant }} - {{ i }}</li> <!-- :key il faut mettre pour index unique, IMPORTANT -->
+    </ul>
+    <template v-for="(ingrediant, index) in ingredients">
+        <li>{{ ingrediant }}</li>
+        <li>{{ index }}</li>
+    </template>
+    <button @click="ingredients.push('spices')">Add ingredient</button>
+
+
+    <hr>
+    <ul v-for="person in persons">
+        <p>Name: {{ person.name }}</p>
+        <div v-for="p in person.messages">
+            <p style="padding-left: 20px;">Message: {{ p.text }}</p>
+        </div>
+
+    </ul>
+
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            ingredients: ['meat', 'fruit', 'cookies'],
+            persons: [
+                { name: 'Max', age: 27, color: 'red', messages: [{text: 'hello'}, {text: 'by'}] },
+                { name: 'Anna', age: 'unknow', color: 'blue', messages: [{text: 'Hi'}, {text: 'Se you later'}] },
+            ]
+        },
+        methods: {
+
+        }
+    })
+</script>
+
+
+</body>
+</html>

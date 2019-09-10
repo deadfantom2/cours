@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <button v-on:click="dincrease">-1</button>
+    <button v-on:click="increase">+1</button>
+    <button v-on:click="counter++">Alternative counter ++</button>
+    <button v-on:click="increase2(2, $event)">+2</button>
+    <p>{{ counter }}</p>
+    <p>{{ counter > 3 ? 'Greater than 3' : 'Smaller than 3' }}</p> <!-- if else -->
+
+    <p v-on:mousemove="updateCoordinates">{{ x }} / {{ y }}</p>
+    <span v-on:mousemove.stop="">DEAD SPOT</span>
+    <hr>
+
+    <input type="text" v-on:keyup.enter.space="alertMe"> <!-- au moment quand on appuit sur enter ou space alert apparait -->
+
+
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            counter: 0,
+            x: 0,
+            y: 0
+        },
+        methods: {
+            dincrease: function () {
+                if(this.counter === 0)
+                    this.counter =0;
+                else
+                    this.counter--;
+            },
+            increase: function () {
+                this.counter++;
+            },
+            increase2: function(step, event){
+                console.log(event)
+                this.counter += step;
+            },
+            updateCoordinates: function (event) {
+                this.x = event.clientX;
+                this.y = event.clientY;
+
+            },
+            alertMe: function (event) {
+                this.counter = event.target.value;
+                alert(this.counter);
+            }
+        }
+    })
+</script>
+
+
+</body>
+</html>

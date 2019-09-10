@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <p v-if="show">You can see me!</p>
+    <p v-else>Now you see me!</p>
+    <template v-if="show">
+        <h1>Head title here</h1>
+        <p>Inside a template</p>
+    </template>
+    <p v-show="show">Do you also see me?</p>  <!-- v-show: ajoute dans la balise style avec display: none; -->
+    <button @click="show = !show"></button>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            show: true
+        },
+        methods: {
+
+        }
+    })
+</script>
+
+
+</body>
+</html>
