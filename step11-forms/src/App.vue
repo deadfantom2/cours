@@ -11,7 +11,9 @@
                                 type="text"
                                 id="email"
                                 class="form-control"
-                                v-model="userData.email">
+                                :value="userData.email"
+                                @input="userData.email = $event.target.value">
+<!--                                v-model="userData.email">-->  <!-- :value et @input une autre manière de faire -->
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
@@ -20,7 +22,7 @@
                                 id="password"
                                 class="form-control"
                                 v-model.lazy="userData.password">
-                        {{userData.password}}
+                        {{userData.password}}  <!-- lazy permet d'ampecher l'affichage de pwd, sauf si on quitte input pwd  -->
                     </div>
                     <div class="form-group">
                         <label for="age">Age</label>
@@ -40,7 +42,8 @@
                     <textarea
                             id="message"
                             rows="5"
-                            class="form-control"></textarea>
+                            class="form-control"
+                            v-model="message"></textarea>
                 </div>
             </div>
             <div class="row">
@@ -50,13 +53,15 @@
                             <input
                                     type="checkbox"
                                     id="sendmail"
-                                    value="SendMail"> Send Mail
+                                    value="SendMail"
+                                    v-model="sendMail"> Send Mail
                         </label>
                         <label for="sendInfomail">
                             <input
                                     type="checkbox"
                                     id="sendInfomail"
-                                    value="SendInfoMail"> Send Infomail
+                                    value="SendInfoMail"
+                                    v-model="sendMail"> Send Infomail
                         </label>
                     </div>
 
@@ -68,13 +73,15 @@
                         <input
                                 type="radio"
                                 id="male"
-                                value="Male"> Male
+                                value="Male"
+                                v-model="gender"> Male
                     </label>
                     <label for="female">
                         <input
                                 type="radio"
                                 id="female"
-                                value="Female"> Female
+                                value="Female"
+                                v-model="gender"> Female
                     </label>
                 </div>
             </div>
@@ -83,22 +90,30 @@
                     <label for="priority">Priority</label>
                     <select
                             id="priority"
-                            class="form-control">
-                        <option></option>
+                            class="form-control"
+                            v-model="selectedOption">
+                        <option v-for="option in options">{{ option }}</option>
                     </select>
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <!-- COMPONENT -********-******************************************* -->
+                    <app-switch v-model="dataSwitch"></app-switch>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <button
-                            class="btn btn-primary">Submit!
+                            class="btn btn-primary"
+                            @click.prevent="submitted()">Submit!
                     </button>
                 </div>
             </div>
         </form>
         <hr>
-        <div class="row">
+        <div class="row" v-if="isSubmittedForm">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -108,14 +123,14 @@
                         <p>Mail: {{ userData.email }}</p>
                         <p>Password: {{ userData.password }}</p>
                         <p>Age: {{ userData.age }}</p>
-                        <p>Message: </p>
+                        <p style="white-space: pre">Message: {{ message }}</p>  <!-- space pour les sauts des lignes -->
                         <p><strong>Send Mail?</strong></p>
                         <ul>
-                            <li></li>
+                            <li v-for="item in sendMail">{{ item }}</li>
                         </ul>
-                        <p>Gender:</p>
-                        <p>Priority:</p>
-                        <p>Switched:</p>
+                        <p>Gender: {{ gender }}</p>
+                        <p>Priority: {{ selectedOption }}</p>
+                        <p>Switched: {{ dataSwitch }}</p>
                     </div>
                 </div>
             </div>
@@ -124,6 +139,7 @@
 </template>
 
 <script>
+    import Switch from "./Switch.vue";
     export default {
         data(){
             return {
@@ -131,8 +147,23 @@
                     email: '',
                     password: '',
                     age: 18
-                }
+                },
+                message: 'A new text',
+                sendMail: [],
+                gender: [],
+                options: ['Low', 'Medium', 'High'],
+                selectedOption: 'Medium',
+                dataSwitch: true,
+                isSubmittedForm: false
             }
+        },
+        methods: {
+          submitted(){
+              this.isSubmittedForm = true;
+          }
+        },
+        components: {
+            appSwitch: Switch
         }
     }
 </script>
@@ -140,3 +171,7 @@
 <style>
 
 </style>
+
+
+
+
