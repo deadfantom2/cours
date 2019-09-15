@@ -1,3 +1,6 @@
 sudo npm i -g vue-cli
 vue init webpack-simple project_name  // apres il faut faire npm i
 npm i
+
+
+vue create project_name
