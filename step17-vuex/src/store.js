@@ -5,50 +5,50 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
     state: {
-        counter: 0,
-        value: 0
+        counterState: 0,
+        valueState: 0
     },
     getters: {
-        doubleCounter: state => {
-            return state.counter * 2;
+        doubleCounterGetters: state => {
+            return state.counterState;
         },
-        stringCounter: state => {
-            return state.counter + ' Clicks';
+        stringCounterGetters: state => {
+            return state.counterState + ' Clicks';
         },
-        value: state => {
-            return state.value;
+        valueGetters: state => {
+            return state.valueState;
         }
     },
     mutations: {
-        decrementStore: (state, payload) => {
-            state.counter -= payload;
+        decrementStoreMutations: (state, payload) => {
+            state.counterState -= payload;
         },
-        incrementStore: (state, payload) => {
-            state.counter += payload;
+        incrementStoreMutations: (state, payload) => {
+            state.counterState += payload;
         },
-        updateValue: (state, payload) => {
-            state.value = payload;
+        updateValueMutations: (state, payload) => {
+            state.valueState = payload;
         }
     },
     actions: {
-        decrementStore: ({commit}, payload) => {
-            commit('decrementStore', payload);
+        decrementStoreActions: ({commit}, payload) => {
+            commit('decrementStoreMutations', payload);  /*on prends le nom qui est dans commit à partir de mutations*/
         },
-        incrementStore: ({commit}, payload) => {
-            commit('incrementStore', payload);
+        incrementStoreActions: ({commit}, payload) => {
+            commit('incrementStoreMutations', payload);  /*on prends le nom qui est dans commit à partir de mutations*/
         },
-        asyncDecrementStore: ({commit}, payload) => {
+        asyncDecrementStoreActions: ({commit}, payload) => {
             setTimeout(() => {
-                commit('decrementStore', payload.by);
+                commit('decrementStoreMutations', payload.by); /*on prends le nom qui est dans commit à partir de mutations*/
             }, payload.duration);
         },
-        asyncIncrementStore: ({commit}, payload) => {
+        asyncIncrementStoreActions: ({commit}, payload) => {
             setTimeout(() => {
-                commit('incrementStore', payload.by);
+                commit('incrementStoreMutations', payload.by); /*on prends le nom qui est dans commit à partir de mutations*/
             }, payload.duration);
         },
-        updateValue({commit}, payload){
-            commit('updateValue', payload);
+        updateValueActions({commit}, payload){
+            commit('updateValueMutations', payload); /*on prends le nom qui est dans commit à partir de mutations*/
         }
     }
 });

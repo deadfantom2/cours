@@ -1,12 +1,12 @@
 <template>
-    <p>Counter is {{ counter }}</p>
+    <p>Counter of Result.vue is {{ counter }}</p>
 </template>
 
 <script>
     export default {
         computed: {
             counter(){
-                return this.$store.state.counter;
+                return this.$store.state.counterState;
             }
         }
     }

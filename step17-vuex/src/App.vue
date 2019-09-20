@@ -1,14 +1,12 @@
 <template>
-  <div id="app">
-    <app-result></app-result>
-    <hr>
+  <div>
     <app-counter></app-counter>
-    <app-another-result></app-another-result>
+    <app-result></app-result>
     <app-another-counter></app-another-counter>
+    <app-another-result></app-another-result>
     <hr>
-    <input type="text" v-model="valueC">
-    <!-- <input type="text" :value="valueC" @input="updateValue">  1er meth-->
-    {{valueC}}
+    <input type="text" v-model="valeur">
+    {{ valeur }}
   </div>
 </template>
 
@@ -21,21 +19,13 @@ import AnotherCounter from "./components/AnotherCounter";
 
 export default {
   computed: {
-    valueC: {
+    valeur: {
       get(){
-        return this.$store.getters.value;
+        return this.$store.getters.valueGetters;
       },
       set(value){
-        this.$store.dispatch('updateValue', value)
+        this.$store.dispatch('updateValueActions', value)
       }
-    }
-    /*valueC(){ 1er meth
-      return this.$store.getters.value;
-    }*/
-  },
-  methods: {
-    updateValue(event){
-      this.$store.dispatch('updateValue', event.target.value)
     }
   },
   components: {

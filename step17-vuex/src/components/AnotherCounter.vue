@@ -1,7 +1,8 @@
 <template>
-    <div>
-        <button class="btn btn-primary" @click="asyncDecrementStore({by: 50, duration: 500})">--</button>
-        <button class="btn btn-primary" @click="asyncIncrementStore({by: 50, duration: 500})">++</button>
+    <div style="border: black solid 1px">
+        <h1>AnotherCounter.vue</h1>
+        <button class="btn btn-primary" @click="asyncDecrementStoreActions({by: 50, duration: 500})">--</button>
+        <button class="btn btn-primary" @click="asyncIncrementStoreActions({by: 50, duration: 500})">++</button>
     </div>
 </template>
 
@@ -9,15 +10,9 @@
     import { mapActions } from 'vuex'
     export default {
         methods: {
-            /*decrem(){
-                this.$store.commit('decrementStore');
-            },
-            increm(){
-                this.$store.commit('incrementStore');
-            }*/
             ...mapActions([
-                'asyncDecrementStore',
-                'asyncIncrementStore'
+                'asyncDecrementStoreActions',
+                'asyncIncrementStoreActions'
             ])
         }
     }

@@ -1,29 +1,17 @@
 <template>
     <div>
-        <!-- <p>Counter is {{ counter }}</p>
-        <p>Number of Clicks: {{ clicks }}</p> -->
-
-        <p>Counter is {{ doubleCounter }}</p>
-        <p>Number of Clicks {{ stringCounter }}</p>
+        <p>Counter of AnotherResult.vue is : {{ doubleCounterGetters }}</p>
+        <p>Number of AnotherResult.vue of clicks : {{ stringCounterGetters }}</p>
     </div>
 </template>
 
 <script>
     import { mapGetters } from 'vuex';
     export default {
-        //Voici l'exemple de code non optimiser
-        /*computed: {
-            counter(){
-                return this.$store.getters.doubleCounter;
-            },
-            clicks(){
-                return this.$store.getters.stringCounter;
-            }
-        }*/
         computed: {
             ...mapGetters([
-               'doubleCounter',
-               'stringCounter'
+               'doubleCounterGetters',
+               'stringCounterGetters'
            ])
         }
     }
