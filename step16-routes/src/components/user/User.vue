@@ -1,23 +1,18 @@
 <template>
     <div>
-        <h1>The user page</h1>
         <hr>
-        <p>Loaded ID: {{ id }}</p>
-        <button @click="navigateToHome" class="btn btn-primary">Go to home</button>
-
+        <h1>The user page -----User.vue</h1>
+        <button @click="navigateToHome" class="btn btn-primary">Go to home ---User.vue</button>
+        <p>router-view point enter1 pour UserStart.vue -----User.vue</p>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
     export default {
-        data(){
-          return {
-              id: this.$route.params.id
-          }
-        },
         methods: {
             navigateToHome(){
-                this.$router.push('/');
+                this.$router.push({ name: 'home'});
             }
         }
     }

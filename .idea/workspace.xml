@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488e81d1-83db-4519-96ca-08458350e62b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/step11-forms/src/Switch.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step11-forms/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step11-forms/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step16-routes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/step16-routes/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/user/User.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/user/User.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/user/UserDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/user/UserDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/user/UserEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/user/UserEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/user/UserStart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/user/UserStart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step16-routes/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step16-routes/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/routes.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,17 +39,17 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/step11-forms/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.." />
       <recent name="$PROJECT_DIR$/step11-forms" />
       <recent name="$PROJECT_DIR$/project_quote" />
       <recent name="$PROJECT_DIR$/project_quote/src" />
-      <recent name="$PROJECT_DIR$/project_quote/src/components" />
-      <recent name="$PROJECT_DIR$/project_name/src/components/Server" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/step11-forms/src" />
@@ -64,14 +72,9 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue/step5/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/vue/step5/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -95,6 +98,10 @@
       <workItem from="1567769921991" duration="11438000" />
       <workItem from="1568117792468" duration="8719000" />
       <workItem from="1568187086459" duration="6665000" />
+      <workItem from="1568622412798" duration="157000" />
+      <workItem from="1568626142563" duration="512000" />
+      <workItem from="1568644283887" duration="406000" />
+      <workItem from="1568965150492" duration="563000" />
     </task>
     <servers />
   </component>
