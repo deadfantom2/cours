@@ -17,3 +17,10 @@
 .blue {
     background-color: blue;
 }
+
+.btn-add-user {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 100px
+}

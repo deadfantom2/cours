@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="488e81d1-83db-4519-96ca-08458350e62b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step16-routes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/step16-routes/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/user/User.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/user/User.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/user/UserDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/user/UserDetail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/user/UserEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/user/UserEdit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step16-routes/src/components/user/UserStart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/components/user/UserStart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step16-routes/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step16-routes/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/step16-routes/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/step3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step3/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/step3/index1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step3/vue.css" beforeDir="false" afterPath="$PROJECT_DIR$/step3/vue.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,6 +95,7 @@
       <workItem from="1568626142563" duration="512000" />
       <workItem from="1568644283887" duration="406000" />
       <workItem from="1568965150492" duration="563000" />
+      <workItem from="1568993310919" duration="740000" />
     </task>
     <servers />
   </component>
